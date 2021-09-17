@@ -22,20 +22,23 @@ let arr = [1,23,12313,12,3,2,1,66,7,3,4,6,8,9,123,53,23,5,5,8,123,15,16,1,77,55,
                 output.textContent = `элемент находится по индексу ${position}`;
                 return position;
             }
-            if(item < array[center]) end = center -1;
-            if(item > array[center]) start = center +1;
+            if(item < array[center]){
+                end = center -1;
+            }else{
+                start = center + 1;
+            }
         }
-
+     return  output.textContent = `элемент находится по индексу ${position}`;
     };
 
-    arr.sort((a, b)=>{
-    return a -b;
-    });
+    // arr.sort((a, b)=>{
+    // return a -b;
+    // });
 
 
-console.log(binarySearch(arr, 7));
+console.log(binarySearch(arr, 23));
 
-console.log(binarySearch(arr2, 16));
+// console.log(binarySearch(arr2, 16));
 
 
 
