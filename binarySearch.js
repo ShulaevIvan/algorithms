@@ -7,38 +7,8 @@ let arr = [1,23,12313,12,3,2,1,66,7,3,4,6,8,9,123,53,23,5,5,8,123,15,16,1,77,55,
     output = document.querySelector('.output');
 
 
-    const binarySearch = (array, item)=>{
-    
-        let start = 0,
-            end = array.length,
-            center,
-            found = false,
-            position = -1;
-        while(found == false && start <=end){
-            center = Math.floor((start + end) / 2);
-            if(item === array[center]){
-                position = center;
-                found = true;
-                output.textContent = `элемент находится по индексу ${position}`;
-                return position;
-            }
-            if(item < array[center]){
-                end = center -1;
-            }else{
-                start = center + 1;
-            }
-        }
-     return  output.textContent = `элемент находится по индексу ${position}`;
-    };
-
-    // arr.sort((a, b)=>{
-    // return a -b;
-    // });
 
 
-console.log(binarySearch(arr, 23));
-
-// console.log(binarySearch(arr2, 16));
 
 
 
