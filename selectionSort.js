@@ -14,9 +14,6 @@ function selectionSort(array){
                 minIndex = j;
             }
         }
-        let tmp = array[i];
-        array[i] = array[minIndex];
-        array[minIndex] = tmp;
     }
 
 return array
